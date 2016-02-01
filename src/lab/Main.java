@@ -14,12 +14,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		
-		//String bowler_log = "";
-
 		String bowler_log = new String(Files.readAllBytes(Paths.get("/Users/IRON/workspace/Lab 1/Files/bowler.txt")));
-		
-		//System.out.println(bowler_log);
-		
 		
 		Parser prsr = new Parser(bowler_log);
 		
@@ -35,16 +30,7 @@ public class Main {
 			indx++;
 			
 		}
-		
-		Player Joe = new Player();
-		
-		System.out.println("Score " + Joe.getScore());
-		System.out.println("Number of Strikes " + Joe.getNumStrikes());
-		System.out.println("Number of Spares " + Joe.getNumSpares());
-		System.out.println("Done.");
-
 	}
-
 }
 
 //TODO//
